@@ -8,6 +8,9 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddHttpClient("TextForGroceries.ServerAPI", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+
+builder.Services.AddViewModels();
+
 builder.Services.AddMudServices();
 
 // Supply HttpClient instances that include access tokens when making requests to the server project
