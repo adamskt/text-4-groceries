@@ -7,12 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.0" />
+    <PackageReference Include="Azure.Data.Tables" Version="12.7.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Client\TextForGroceries.Client.csproj" />
     <ProjectReference Include="..\Shared\TextForGroceries.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TableData\" />
   </ItemGroup>
 
 </Project>
