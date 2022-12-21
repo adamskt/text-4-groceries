@@ -1,0 +1,26 @@
+﻿@page "/about"
+
+<MudPaper Class="pa-16 ma-2" Outlined="true">
+
+    <MudList>
+        <MudListItem Avatar="@Icons.Custom.Brands.GitHub">
+            <MudLink Href="https://github.com/adamskt/text-4-groceries">Code</MudLink>
+        </MudListItem>
+        <MudListItem Avatar="@Icons.Filled.Copyright">
+            <MudLink Href="https://github.com/adamskt/text-4-groceries/blob/main/LICENSE.md">Copyright @DateTime.Today.Year Kelly T. Adams</MudLink>
+        </MudListItem>
+        <MudListItem Icon="@Icons.Filled.MiscellaneousServices" Text="Services" InitiallyExpanded="true">
+            <NestedList>
+                <MudListItem Avatar="@Icons.Custom.Brands.MicrosoftAzure">
+                    <MudLink Href="https://azure.microsoft.com/">Microsoft Azure</MudLink>
+                </MudListItem>
+                <MudListItem Avatar="@Icons.Filled.Textsms">
+                    <MudLink Href="https://www.twilio.com/">Twilio</MudLink>
+                </MudListItem>
+                <MudListItem Avatar="@Icons.Custom.Brands.MudBlazor">
+                    <MudLink Href="https://mudblazor.com/">MudBlazor</MudLink>
+                </MudListItem>
+            </NestedList>
+        </MudListItem>
+    </MudList>
+</MudPaper>
